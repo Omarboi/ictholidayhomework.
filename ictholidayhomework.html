@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top 3 Famous Monuments In India</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #004080;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #004080;
+      color: #fff;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .glow {
+      transition: box-shadow 0.3s;
+    }
+
+    .glow:hover {
+      box-shadow: 0 0 10px #004080;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .cell-image {
+      display: none;
+      width: 100px;
+      height: 100px;
+    }
+
+    td:hover .cell-image {
+      display: block;
+    }
+
+    .footer {
+      margin-top: 40px;
+      background-color: #004080;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .footer-logo {
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .footer-note {
+      font-size: 14px;
+    }
+
+    .footer-gif {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      animation: rotate 2s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 3 Famous Monuments In India:</h1>
+
+  <table>
+    <tr>
+      <th>Monument</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td class="glow">Taj Mahal</td>
+      <td>
+        <img src="tajmahal.jpg" alt="Taj Mahal" width="100" height="100">
+        <img src="tajmahalnight.gif" alt="Taj Mahal Hover" class="cell-image">
+      </td>
+      <td class="fade-in">The Taj Mahal is an ivory-white marble mausoleum located in Agra, India. It was built by the Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal.</td>
+      <td><a href="https://whc.unesco.org/en/list/252/#:~:text=The%20Taj%20Mahal%20is%20located,Agra%20District%20in%20Uttar%20Pradesh.">More Info</a></td>
+    </tr>
+    <tr>
+      <td class="glow">Mysore Palace</td>
+      <td>
+        <img src="mysore.jpg" alt="Mysore Palace" width="100" height="100">
+        <img src="mysorenight.gif" alt="Mysore Palace Hover" class="cell-image">
+      </td>
+      <td class="fade-in">Mysore Palace is a historical palace located in the city of Mysore in the state of Karnataka, India. It is known for its exquisite architecture and is one of the most visited tourist attractions in India.</td>
+      <td><a href="https://mysore.nic.in/en/tourist-place/mysuru-palace/">More Info</a></td>
+    </tr>
+    <tr>
+      <td class="glow">Qutub Minar</td>
+      <td>
+        <img src="qutub.jpg" alt="Qutub Minar" width="100" height="100">
+        <img src="qutubnight.gif" alt="Qutub Minar Hover" class="cell-image">
+      </td>
+      <td class="fade-in">Qutub Minar is a UNESCO World Heritage Site located in Delhi, India. It is the tallest brick minaret in the world and is known for its intricate architectural details.</td>
+      <td><a href="https://whc.unesco.org/en/list/233/">More Info</a></td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="Omar.gif" alt="Omar Logo" style="width: 80px; height: 80px; border-radius: 50%;">
+    </div>
+    <p class="footer-note">Done By</p>
+    <p><strong>Mohammed Omar 8B</strong></p>
+    <img src="8B.gif" alt="Logo" class="footer-gif">
+  </div>
+</body>
+</html>
